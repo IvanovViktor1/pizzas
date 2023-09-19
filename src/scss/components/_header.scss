@@ -1,0 +1,47 @@
+@import "../variables";
+
+.header {
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(122, 78, 8));
+  border-bottom: 1px solid $gray-line;
+  padding: 40px 0;
+
+  .searching {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+      // flex-direction: column;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 47px;
+    }
+
+    h1 {
+      color: #dfc271;
+      font-size: 34px;
+      letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    p {
+      margin-left: 20px;
+      font-size: 19px;
+      color: #dec686;
+    }
+    span {
+      padding-left: -20px;
+    }
+  }
+}

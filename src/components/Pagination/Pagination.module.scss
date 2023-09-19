@@ -1,0 +1,31 @@
+.number {
+  display: flex;
+  position: fixed;
+  margin-top: calc(100vh - 476px);
+  justify-content: center;
+
+  li {
+    font-size: 22 px;
+    min-width: 20px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 23px 31px;
+    border-radius: 167px;
+    margin-right: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    //   @include noselect();
+
+    &:hover {
+      background-color: #ff761b85;
+    }
+
+    &:global {
+      &.selected {
+        background-color: #ff781b;
+        color: #b13535;
+      }
+    }
+  }
+}
